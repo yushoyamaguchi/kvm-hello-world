@@ -7,6 +7,8 @@ run: kvm-hello-world
 	./kvm-hello-world -p
 	./kvm-hello-world -l
 
+build: kvm-hello-world	
+
 kvm-hello-world: kvm-hello-world.o payload.o
 	$(CC) $^ -o $@
 
